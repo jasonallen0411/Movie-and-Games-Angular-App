@@ -1,0 +1,56 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 50px;
+	background-color: #2D26A1;
+}
+
+header{
+	text-align: center;
+}
+
+#title{
+	color: #E8B914;
+	font-family: futura;
+}
+
+
+.movieThings{
+	color: white;
+	list-style-type: none;
+	font-family: futura;
+}
+
+#mainSearch{
+	width: 200px;
+	margin-top: 20px;
+}
+
+#searchBtn{
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: #E8B914;
+	color: black;
+}
+
+#searchBtn:hover{
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: #BA9410;
+	color: white;
+	-moz-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.gameStuff{
+	font-family: futura;
+	color: white;
+
+}
+
+span{
+	color: #E8B914;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<body>
+<header>
+<img class="d-block w-10" height="200px" width="200px" src="https://files.gamebanana.com/img/ico/sprays/metroid.gif" alt="Third slide">
+<img height="200px" width="200px" src="http://gifimage.net/wp-content/uploads/2017/10/mario-animated-gif-1.gif">
+<img class="d-block w-10" height="200px" width="200px" src="https://media.giphy.com/media/g9G99rBRiYqpG/giphy.gif" alt="Second slide">
+<img class="d-block w-10" height="200px" width="200px" src="https://78.media.tumblr.com/d4cd2f0c75f255768150f74bd99e9deb/tumblr_nl105ykKsd1qashpbo1_540.gif" alt="Fourth slide">
+<h1 id="title">NG Movie and Games App!</h1>
+<img class="d-block w-10" height="200px" width="200px" src="https://media.giphy.com/media/SbsHOPT5DgAog/giphy.gif" alt="Third slide">
+<img class="d-block w-10" height="200px" width="200px" src="https://media.giphy.com/media/Y5SCiK1hDO9AA/giphy.gif" alt="Second slide">
+<img height="200px" width="200px" src="http://gifimage.net/wp-content/uploads/2018/05/spartan-kick-gif-9.gif">
+<img class="d-block w-10" height="200px" width="200px" src="https://media.giphy.com/media/S3Ot3hZ5bcy8o/giphy.gif" alt="Fourth slide">
+
+<div class="moviesAndGamesSearch">
+<input id="mainSearch" type="text" #mainSearch placeholder="Search for movies and games...">
+<button mat-raised-button (click)="searchMoviesAndGames(mainSearch.value)" (click)="toggleOnOff()" id="searchBtn">Movie and Game Me!</button>
+</div>
+
+<div class="movieStuff">
+<ul *ngIf="onOff" class="movieThings">
+	<img src="{{ moviePoster }}">
+	<li><h4><span>Title:</span> {{ movieTitle }}</h4></li>
+	<li><h4><span>Year:</span> {{ movieYear }}</h4></li>
+	<li><h4><span>Rated:</span> {{ movieRated }}</h4></li>
+	<li><h4><span>Released:</span> {{ movieReleased }}</h4></li>
+	<li><h4><span>Runtime:</span> {{ movieRuntime }}</h4></li>
+	<li><h4><span>Genre:</span> {{ movieGenre }}</h4></li>
+	<li><h4><span>Director:</span> {{ movieDirector }}</h4></li>
+	<li><h4><span>Actors:</span> {{ movieActors }}</h4></li>
+</ul>	
+</div>
+
+<div *ngIf="onOff" class="gameStuff">
+	<img height="300px" width="300px" src="https:{{ gameCover }}">
+	<h4><span>Game Title:</span> {{ gameTitle }}</h4>
+	<h4><span>Release Date:</span> {{ gameDate }}</h4>
+	<h4><span>Storyline:</span> {{ gameStoryline }}</h4>
+</div>
+</header>
+
+</body>
+</html>
